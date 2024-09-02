@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Contacto - Seguridad</title>
+    <link rel="stylesheet" href="config/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/ITGS_logo_resized.png" alt="ITGS Logo">
+        </div>
+        <button id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="citas.php">Citas</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seguridad Inc. Todos los derechos reservados.</p>
+    </footer>
+    <script src="config/script.js"></script>
+</body>
+</html>

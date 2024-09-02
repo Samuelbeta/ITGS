@@ -1,0 +1,554 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Fondo neutro */
+}
+
+a {
+    color: #B5E3FB; /* Color primario */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #B5E3FB; /* Color primario */
+    color: #141414; /* Texto en negro para buen contraste */
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.405); /* Sombra sutil */
+}
+
+#logo {
+    width: 160px;
+}
+
+#logo img {
+    width: 60px; /* Ajusta este tamaño según sea necesario */
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #141414;
+    margin: 5px auto;
+    transition: 0.3s;
+}
+
+/* Estilos del menú principal */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #141414; /* Negro para el texto */
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Quitar subrayado por defecto */
+}
+
+nav ul li a:hover {
+    background-color: #141414; /* Negro para hover */
+    color: #fff; /* Blanco para mejor contraste en hover */
+    text-decoration: none; /* Quitar subrayado al hacer hover */
+}
+
+/* Estilos del cuerpo */
+main {
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Hero */
+#hero {
+    background: #B5E3FB; /* Color primario */
+    color: #141414;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Contenido de las secciones */
+#about, #services, #contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fondo claro para tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra para tarjetas */
+    margin-bottom: 20px;
+}
+
+#about h2, #services h2, #contact h2 {
+    border-bottom: 2px solid #B5E3FB; /* Línea en color primario */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Servicios */
+.service {
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333; /* Color oscuro para contraste */
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #B5E3FB; /* Color primario */
+    color: #141414; /* Negro para contraste */
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bff; /* Azul oscuro en hover */
+    color: #fff; /* Blanco en hover */
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #141414; /* Negro para el fondo del pie de página */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid #B5E3FB; /* Color primario */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos para la sección form-cita */
+#form-cita {
+    max-width: 600px;
+    margin: 20px auto; /* Ajuste del margen superior e inferior */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#form-cita h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#form-cita form {
+    text-align: left;
+}
+
+#form-cita form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#form-cita form input,
+#form-cita form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#form-cita form button {
+    width: 100%;
+    background-color: #B5E3FB; /* Color primario */
+    color: #141414; /* Negro para contraste */
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#form-cita form button:hover {
+    background-color: #007bff; /* Azul oscuro en hover */
+    color: #fff; /* Blanco en hover */
+}
+
+/* Centrar la sección del formulario y los detalles */
+#buscar-peticion {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#buscar-peticion form {
+    margin-bottom: 20px;
+}
+
+#buscar-peticion h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalles-peticion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.detalles-peticion h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.detalles-peticion p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #555;
+}
+
+.detalles-peticion strong {
+    color: #000;
+}
+
+/* Contenedor de productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo individual para cada producto */
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para imágenes de productos */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Títulos de productos */
+.product h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Descripción de productos */
+.product p {
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Estilo para botones de productos */
+.product button {
+    background-color: #B5E3FB;
+    color: #141414;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7); /* Fondo oscuro con transparencia */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #B5E3FB;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+    position: relative;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-content.success {
+    border-left: 10px solid #28a745; /* Verde para éxito */
+}
+
+.modal-content.error {
+    border-left: 10px solid #dc3545; /* Rojo para error */
+}
+
+.modal-content.success p {
+    color: #28a745; /* Texto verde para éxito */
+}
+
+.modal-content.error p {
+    color: #dc3545; /* Texto rojo para error */
+}
+
+/* Estilos Responsivos adicionales */
+@media (max-width: 1024px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #about, #services, #contact {
+        margin: 15px 0;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    #menu-toggle {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin-left: auto; /* Alinea el botón de menú a la derecha */
+    }
+
+    #menu-toggle .bar {
+        margin: 6px auto;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #141414; /* Color de fondo del menú de hamburguesa */
+        z-index: 1000;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.81); /* Sombra sutil */
+    }
+
+    nav.active {
+        display: flex;
+        opacity: 1;
+        max-height: 300px; /* Ajusta según la cantidad de contenido en el menú */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #fff; /* Color de texto del menú de hamburguesa */
+        background-color: #141414 ; /* Color de fondo del ítem del menú de hamburguesa */
+        padding: 15px;
+        border-radius: 0%;
+    }
+
+    nav ul li a:hover {
+        background-color: #B5E3FB; /* Azul claro en hover para el menú de hamburguesa */
+        color: #141414; /* Negro en hover */
+    }
+
+    #hero {
+        padding: 40px 10px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #about, #services, #contact {
+        padding: 15px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    #buscar-peticion {
+        padding: 15px;
+    }
+
+    .detalles-peticion {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
